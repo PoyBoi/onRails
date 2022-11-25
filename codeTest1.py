@@ -1,19 +1,26 @@
 from kivy.app import App
 from kivy.uix.label import Label
-from kivy.uix.boxlayout import BoxLayout
+from kivy.uix.anchorlayout import AnchorLayout
 from kivy.uix.textinput import TextInput
 from kivy.uix.button import Button
 
-class myLayout(BoxLayout):
-    def __init__(self, **kwargs):
-        super(BoxLayout, self).__init__(**kwargs)
-        # self.layout = BoxLayout(anchor_x='center', anchor_y='center')
-        self.add_widget(btn = Button(text = "Name: "))
-        layout.add_widget(btn)
+# class myLayout(AnchorLayout):
+#     def __init__(self, **kwargs):
+#         super(myLayout, self).__init__(**kwargs)
+#         self.layout = AnchorLayout(anchor_x='right', anchor_y='bottom')
+#         # btn = 
+#         self.layout.add_widget(Button(text='Hello World'))
+#         # self.add_widget(Button(text = "Name: "))
+       
 
-class myApp(App): 
-    def build(self):
-        # return myLayout()
-        return myLayout()
+# class deployMain(App): 
+#     def build(self):
+#         return myLayout()
 
-myApp().run()
+class myLayout(AnchorLayout):
+    pass
+
+class deployMain(App):
+    pass
+
+deployMain().run()
